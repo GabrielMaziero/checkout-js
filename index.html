@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="cabecalho navbar navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="img/Firewatch_Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Redondo
+            </a>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-warning my-2 my-sm-0 text-white" type="submit">Continuar
+                    Comprando</button>
+            </form>
+        </nav>
+    </header>
+    <main class="container">
+        <form id="checkout" class="row mt-4">
+            <div class="col-md-4">
+                <header class="backg p-2">
+                    Dados Pessoais
+                </header>
+                <div class="p-2">
+                    <div class="form-group">
+                        <label for="nomeUsuario">Nome Completo</label>
+                        <input class="form-control" type="text" id="nomeUsuario" name="userName"
+                            placeholder="Digite seu nome!">
+                    </div>
+                    <div class="form-group">
+                        <label for="cpfUsuario">CPF</label>
+                        <input class="form-control" type="text" id="cpfUsuario" name="userCpf"
+                            placeholder="Digite seu CPF!">
+                    </div>
+                    <div class="form-group">
+                        <label for="telUsuario">Telefone</label>
+                        <input id="telefone" class="form-control" type="tel" id="telUsuario" name="userPhone"
+                            placeholder="Digite seu telefone!">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailUsuario">E-mail</label>
+                        <input class="form-control" type="email" id="emailUsuario" name="userEmail"
+                            placeholder="Digite seu E-mail!">
+                    </div>
+                    <div class="form-group">
+                        <label for="senhaUsuario">Senha</label>
+                        <input class="form-control" type="password" id="senhaUsuario" name="userPassword"
+                            placeholder="Digite sua senha!">
+                    </div>
+                    <div class="form-group">
+                        <label for="confiSenhaUsuario">Confirme sua Senha</label>
+                        <input class="form-control" type="password" id="confiSenhaUsuario" name="user1Password"
+                            placeholder="Confirme sua senha!">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <header class="backg p-2">
+                    Entrega
+                </header>
+                <div class="p-2">
+                    <div class="form-group">
+                        <label for="cepUsuario">CEP</label>
+                        <input class="form-control" type="text" id="cepUsuario" name="userCep"
+                            placeholder="Digite seu CEP!">
+                    </div>
+                    <div class="form-group">
+                        <label for="enderecoUsuario">Endereço</label>
+                        <input class="form-control" type="text" id="enderecoUsuario" name="userEndereco"
+                            placeholder="Digite sua rua!">
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-4">
+                            <label for="numeroUsuario">Numero</label>
+                            <input class="form-control" type="text" id="numeroUsuario" name="userNumero"
+                                placeholder="Nº">
+                        </div>
+                        <div class="col-8">
+                            <label for="complementoUsuario">Complemento</label>
+                            <input class="form-control" type="text" id="complementoUsuario" name="userComplemento"
+                                placeholder="Complemento">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="bairroUsuario">Bairro</label>
+                        <input class="form-control" type="text" id="bairroUsuario" name="userBairro"
+                            placeholder="Bairro">
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label for="cidadeUsuario">Cidade</label>
+                            <input class="form-control" type="text" id="cidadeUsuario" name="userCidade"
+                                placeholder="Cidade">
+                        </div>
+                        <div class="col-6">
+                            <label for="estadoUsuario">Estado</label>
+                            <select name="estadoUsuario" class="form-control">
+                                <option value="" disabled selected>Estado</option>
+                                <option value="SP">SP</option>
+                                <option value="RJ">RJ</option>
+                                <option value="MG">MG</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="envioUsuario">Forma de envio</label>
+                        <div class="col-10">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                    value="option1">
+                                <label class="form-check-label" for="gridRadios1">
+                                    frete rapido
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                    value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                    frete normal
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <header class="backg p-2">
+                    Pagamento
+                </header>
+                <div class="p-2">
+                    <label for="totalCompra">Total</label>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>Camiseta Branca GG</h4><br>
+                            Preço: R$ 200,00
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-2">
+                    <div class="form-group">
+                        <label for="numCartao">Numero do cartão</label>
+                        <input class="form-control" type="number" id="numCartao" name="cardNum"
+                            placeholder="Digite o numero do seu cartão">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-8">
+                        <label for="valCartao">Data de validade</label>
+                        <input class="form-control" type="month" id="valCartao" name="cardVal"
+                            placeholder="data de validade">
+                    </div>
+                    <div class="col-4">
+                        <label for="codCartao">CVV</label>
+                        <input class="form-control" type="number" id="codCartao" name="cardCode" placeholder="CVV">
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="form-group">
+                        <label for="nameCartao">Nome do titular</label>
+                        <input class="form-control" type="text" id="nameCartao" name="cardName"
+                            placeholder="Digite o nome do titular">
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="form-group">
+                        <label for="cpfCartao">CPF do titular</label>
+                        <input class="form-control" type="text" id="cpfCartao" name="cardCPF"
+                            placeholder="Digite o CPF do titular">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button class=" p-2 btn btn-success btn-lg btn-block" type="submit">Finalizar Compra</button>
+                </div>
+
+        </form>
+    </main>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 2017-2020 Redondo</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </footer>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
