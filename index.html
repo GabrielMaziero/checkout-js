@@ -33,32 +33,32 @@
                     <div class="form-group">
                         <label for="nomeUsuario">Nome Completo</label>
                         <input class="form-control" type="text" id="nomeUsuario" name="userName"
-                            placeholder="Digite seu nome!">
+                            placeholder="Digite seu nome">
                     </div>
                     <div class="form-group">
                         <label for="cpfUsuario">CPF</label>
                         <input class="form-control" type="text" id="cpfUsuario" name="userCpf"
-                            placeholder="Digite seu CPF!">
+                            placeholder="Digite seu CPF">
                     </div>
                     <div class="form-group">
                         <label for="telUsuario">Telefone</label>
                         <input id="telefone" class="form-control" type="tel" id="telUsuario" name="userPhone"
-                            placeholder="Digite seu telefone!">
+                            placeholder="Digite seu telefone">
                     </div>
                     <div class="form-group">
                         <label for="emailUsuario">E-mail</label>
                         <input class="form-control" type="email" id="emailUsuario" name="userEmail"
-                            placeholder="Digite seu E-mail!">
+                            placeholder="Digite seu E-mail">
                     </div>
                     <div class="form-group">
                         <label for="senhaUsuario">Senha</label>
                         <input class="form-control" type="password" id="senhaUsuario" name="userPassword"
-                            placeholder="Digite sua senha!">
+                            placeholder="Digite sua senha">
                     </div>
                     <div class="form-group">
                         <label for="confiSenhaUsuario">Confirme sua Senha</label>
                         <input class="form-control" type="password" id="confiSenhaUsuario" name="user1Password"
-                            placeholder="Confirme sua senha!">
+                            placeholder="Confirme sua senha">
                     </div>
                 </div>
             </div>
@@ -69,13 +69,13 @@
                 <div class="p-2">
                     <div class="form-group">
                         <label for="cepUsuario">CEP</label>
-                        <input class="form-control" type="text" id="cepUsuario" name="userCep"
-                            placeholder="Digite seu CEP!">
+                        <input class="form-control" type="number" id="cepUsuario" name="userCep"
+                            placeholder="Digite seu CEP">
                     </div>
                     <div class="form-group">
                         <label for="enderecoUsuario">Endereço</label>
                         <input class="form-control" type="text" id="enderecoUsuario" name="userEndereco"
-                            placeholder="Digite sua rua!">
+                            placeholder="Rua" disabled>
                     </div>
                     <div class="form-group row">
                         <div class="col-4">
@@ -92,13 +92,13 @@
                     <div class="form-group">
                         <label for="bairroUsuario">Bairro</label>
                         <input class="form-control" type="text" id="bairroUsuario" name="userBairro"
-                            placeholder="Bairro">
+                            placeholder="Bairro" disabled>
                     </div>
                     <div class="form-group row">
                         <div class="col-6">
                             <label for="cidadeUsuario">Cidade</label>
                             <input class="form-control" type="text" id="cidadeUsuario" name="userCidade"
-                                placeholder="Cidade">
+                                placeholder="Cidade" disabled>
                         </div>
                         <div class="col-6">
                             <label for="estadoUsuario">Estado</label>
@@ -112,7 +112,7 @@
                     </div>
                     <div class="form-group">
                         <label for="envioUsuario">Forma de envio</label>
-                        <div class="col-10">
+                        <div class="d-flex">
                             <div class="form-check-inline">
                                 <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
                                     value="option1">
@@ -178,21 +178,48 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-end">
-                    <button class=" p-2 btn btn-success btn-lg btn-block" type="submit">Finalizar Compra</button>
+                    <button class=" p-2 btn btn-success btn-lg btn-block" type="button" data-toggle="modal" data-target="#teste">Finalizar Compra</button>
                 </div>
 
         </form>
     </main>
+    <div class="modal" tabindex="-1" role="dialog" id="teste">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-primary">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <footer class="my-5 pt-5 text-muted text-center text-small">
         <p class="mb-1">© 2017-2020 Redondo</p>
         <ul class="list-inline">
-          <li class="list-inline-item"><a href="#">Privacy</a></li>
-          <li class="list-inline-item"><a href="#">Terms</a></li>
-          <li class="list-inline-item"><a href="#">Support</a></li>
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
         </ul>
-      </footer>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-
 </body>
 
 </html>
